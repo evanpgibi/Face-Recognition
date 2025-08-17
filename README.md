@@ -45,11 +45,11 @@ To keep your keys private, the real config.json is ignored by Git.
 3. Save the file. The program will now load your credentials without exposing them on GitHub.
 
 ## ▶️ Usage
+1. Run the exe (for non-programmers):
+  Download the zip file from the Releases page, extract it, and double-click `Face_Recognition.exe` to run.
 
-1. Run with Python:
+2. Run with Python:
    ```bash
    python Face_Recognition.py
 
-2. Or run the EXE:
-   ```bash
-   Face_Recognition.exe
+   
