@@ -44,7 +44,7 @@ To keep your keys private, the real config.json is ignored by Git.
 
 3. Save the file. The program will now load your credentials without exposing them on GitHub.
 
-##▶️ Usage
+## ▶️ Usage
 
 1. Run with Python:
    ```bash
