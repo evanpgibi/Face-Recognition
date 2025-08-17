@@ -32,7 +32,7 @@ To keep your keys private, the real config.json is ignored by Git.
 1. Copy the example config file:
    ```bash
    cp config.example.json config.json
-   (On Windows: duplicate config.example.json and rename to config.json)
+(On Windows: duplicate config.example.json and rename to config.json)
 
 2. Open config.json and add your Face++ keys:
    ```bash
