@@ -46,7 +46,7 @@ To keep your keys private, the real config.json is ignored by Git.
 
 ## ▶️ Usage
 1. Run the exe (for non-programmers):
-  Download the zip file from the Releases page, extract it, and double-click `Face_Recognition.exe` to run.
+  Download the file from the Releases page and double-click `Face_Recognition.exe` to run.
 
 2. Run with Python:
    ```bash
