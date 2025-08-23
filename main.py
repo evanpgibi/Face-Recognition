@@ -4,7 +4,7 @@ import sys, os
 import json
 
 def resource_path(relative_path):
-    """Get absolute path to resource (works for dev and for PyInstaller)"""
+    #Get absolute path to resource (works for dev and for PyInstaller)
     if hasattr(sys, '_MEIPASS'):
         return os.path.join(sys._MEIPASS, relative_path)
     return os.path.join(os.path.abspath("."), relative_path)
@@ -12,11 +12,14 @@ def resource_path(relative_path):
 vid=cv2.VideoCapture(0)
 
 # Load configuration from JSON file
-with open("config.json", 'r') as config_file:
-    config = json.load(config_file)
-    FACESET_TOKEN = config["FACESET_TOKEN"]
-    API_KEY = config["API_KEY"]
-    API_SECRET = config["API_SECRET"]
+try:
+    with open("config.json", 'r') as config_file:
+        config = json.load(config_file)
+        FACESET_TOKEN = config["FACESET_TOKEN"]
+        API_KEY = config["API_KEY"]
+        API_SECRET = config["API_SECRET"]
+except:
+    print("u havnt made the config.json file")
 
 try:
     with open("Faces.json",'r') as f1:
@@ -113,4 +116,5 @@ while True:
 
 vid.release()
 cv2.destroyAllWindows()
+
 input("Press Enter to close")
